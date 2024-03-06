@@ -1,0 +1,62 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "e1dda2555f79135f5539762d01af0a5f3ba59e862e935edc49991de3bac3c7bf": {
+      "source": {
+        "path": "asset.e1dda2555f79135f5539762d01af0a5f3ba59e862e935edc49991de3bac3c7bf",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "672107698272-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-672107698272-us-east-1",
+          "objectKey": "e1dda2555f79135f5539762d01af0a5f3ba59e862e935edc49991de3bac3c7bf.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-file-publishing-role-672107698272-us-east-1"
+        }
+      }
+    },
+    "4e26bf2d0a26f2097fb2b261f22bb51e3f6b4b52635777b1e54edbd8e2d58c35": {
+      "source": {
+        "path": "asset.4e26bf2d0a26f2097fb2b261f22bb51e3f6b4b52635777b1e54edbd8e2d58c35",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "672107698272-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-672107698272-us-east-1",
+          "objectKey": "4e26bf2d0a26f2097fb2b261f22bb51e3f6b4b52635777b1e54edbd8e2d58c35.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-file-publishing-role-672107698272-us-east-1"
+        }
+      }
+    },
+    "456c0e2cd2c23ce6625a887b98fb4930f0319e2067ef542bfbe44fed3bbbaf5f": {
+      "source": {
+        "path": "asset.456c0e2cd2c23ce6625a887b98fb4930f0319e2067ef542bfbe44fed3bbbaf5f.zip",
+        "packaging": "file"
+      },
+      "destinations": {
+        "672107698272-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-672107698272-us-east-1",
+          "objectKey": "456c0e2cd2c23ce6625a887b98fb4930f0319e2067ef542bfbe44fed3bbbaf5f.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-file-publishing-role-672107698272-us-east-1"
+        }
+      }
+    },
+    "a2ea8fb1ad8e9953f9f9311fa1698038ca704eebcc0d9fee2e120aa1c5279ca4": {
+      "source": {
+        "path": "ssennettau-partyapp-job-description-generator-Site.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "672107698272-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-672107698272-us-east-1",
+          "objectKey": "a2ea8fb1ad8e9953f9f9311fa1698038ca704eebcc0d9fee2e120aa1c5279ca4.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-file-publishing-role-672107698272-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

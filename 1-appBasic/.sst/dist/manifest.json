@@ -1,0 +1,300 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "ssennettau-partyapp-job-description-generator-Site.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ssennettau-partyapp-job-description-generator-Site.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "ssennettau-partyapp-job-description-generator-Site": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://672107698272/us-east-1",
+      "properties": {
+        "templateFile": "ssennettau-partyapp-job-description-generator-Site.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "sst:app": "partyapp-job-description-generator",
+          "sst:stage": "ssennettau"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-deploy-role-672107698272-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-cfn-exec-role-672107698272-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-672107698272-us-east-1/33861596535022b9e3dd91ae88b614095082aa1893a902101c4c9f7902b1af02.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "ssennettau-partyapp-job-description-generator-Site.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::672107698272:role/cdk-hnb659fds-lookup-role-672107698272-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "ssennettau-partyapp-job-description-generator-Site.assets"
+      ],
+      "metadata": {
+        "/ssennettau-partyapp-job-description-generator-Site": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "partyapp-job-description-generator"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "ssennettau"
+              }
+            ]
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/CustomResourceHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerServiceRole41AEC181"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/CustomResourceHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerE8FB56BA"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/S3Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteS3Bucket2B2851F3"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/S3Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteS3BucketPolicyBB4DF05F"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/S3Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteS3BucketAutoDeleteObjectsCustomResource3E10A2DE"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/CloudFrontFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCloudFrontFunctionE91DD486"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/AssetReplacerPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionAssetReplacerPolicy304BF125"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/AssetReplacer/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionAssetReplacer9A11D516"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/ServerFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionServiceRole8328A688"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/ServerFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionServiceRoleDefaultPolicy6EA49472"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/ServerFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunction6DFA6F1B"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/ServerFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionLogRetention7123678D"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/ServerFunction/FunctionUrl/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionFunctionUrl1B09C490"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunction/ServerFunction/invoke-function-url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctioninvokefunctionurlEABB57E1"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/S3AssetUploaderPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteS3AssetUploaderPolicy41A1C581"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/S3AssetUploader/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteS3AssetUploader2482D9D3"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerCache/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerCacheDD54ACDF"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Certificate/CertificateRequestorFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCertificateCertificateRequestorFunctionServiceRole713C0E1E"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Certificate/CertificateRequestorFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyF666908B"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Certificate/CertificateRequestorFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCertificateCertificateRequestorFunction67D0DA6E"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Certificate/CertificateRequestorResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCertificateCertificateRequestorResource6EC2A2A2"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Distribution/Origin2/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteDistributionOrigin2S3Origin49B86EE9"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Distribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteDistribution706F5265"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/AliasRecord/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteAliasRecordD2C115B7"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/AliasRecordAAAA/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteAliasRecordAAAA8C79A8E1"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/ServerFunctionInvalidatorPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionInvalidatorPolicy004B2ED1"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/CloudFrontInvalidatorPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCloudFrontInvalidatorPolicyEE18C654"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/CloudFrontInvalidator/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteCloudFrontInvalidator18BEA866"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/site/Parameter_url/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteParameterurl3D1716BC"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/AWSCloudFrontPartitionHostedZoneIdMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCloudFrontPartitionHostedZoneIdMap"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/SSTStackOutputurl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "url"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/SSTStackOutputSSTMetadata": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSTMetadata"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ssennettau-partyapp-job-description-generator-Site/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "ssennettau-partyapp-job-description-generator-Site"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
