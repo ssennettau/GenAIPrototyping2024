@@ -288,7 +288,7 @@
      ]
     },
     "bucket": "cdk-hnb659fds-assets-672107698272-us-east-1",
-    "key": "65609f18181a8d4a2771a10f093f9ecf9155d52942abfaa1555d532db91d3564.zip",
+    "key": "935df7915683ad2661ca22b2ab254abb570a65a5ac979802691c3599dd8b3344.zip",
     "replacements": []
    },
    "DependsOn": [
@@ -410,7 +410,7 @@
     ],
     "Code": {
      "S3Bucket": "cdk-hnb659fds-assets-672107698272-us-east-1",
-     "S3Key": "65609f18181a8d4a2771a10f093f9ecf9155d52942abfaa1555d532db91d3564.zip"
+     "S3Key": "935df7915683ad2661ca22b2ab254abb570a65a5ac979802691c3599dd8b3344.zip"
     },
     "Description": "Server handler for SvelteKit",
     "Environment": {
@@ -590,7 +590,7 @@
     "sources": [
      {
       "bucketName": "cdk-hnb659fds-assets-672107698272-us-east-1",
-      "objectKey": "d52c1d518a26841bc4a574c7273459a8b08ceb29006a79cb85ab86afb1e4e578.zip"
+      "objectKey": "90d796cb69fda0e8ee96dda94be140819181c22beccb46a80ca2a8424f778ce1.zip"
      }
     ],
     "destinationBucketName": {
@@ -1102,7 +1102,7 @@
       "Arn"
      ]
     },
-    "version": "1709779421427",
+    "version": "1710567967262",
     "distributionId": {
      "Ref": "siteDistribution706F5265"
     },
