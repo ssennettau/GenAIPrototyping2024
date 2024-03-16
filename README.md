@@ -39,7 +39,7 @@ The goal of this stage should be to **demonstrate that the solution helps people
 
 #### References
 
-* [Basic GenStack App](https://jobdescription-2.ssennett.net)
+* [Basic GenStack App](https://jobdescription-1.ssennett.net)
 * [Customized GenStack App](https://jobdescription-2.ssennett.net)
 
 ### 3. Minimum Viable Product
